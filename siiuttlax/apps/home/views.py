@@ -4,3 +4,5 @@ from django.shortcuts import render
 def home(request):
     return render(request,'home/home.html')
 
+def samaria(request):
+    return render(request, 'home/samaria.html')
