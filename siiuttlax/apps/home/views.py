@@ -6,3 +6,7 @@ def home(request):
 
 def samaria(request):
     return render(request, 'home/samaria.html')
+  
+  
+def luis(request):
+    return render(request, 'home/luis.html')
