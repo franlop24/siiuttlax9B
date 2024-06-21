@@ -8,3 +8,11 @@ def home(request):
 def fatt(request):
     return render(request, 'home/fatt.html')
 
+
+def samaria(request):
+    return render(request, 'home/samaria.html')
+  
+  
+def luis(request):
+    return render(request, 'home/luis.html')
+
