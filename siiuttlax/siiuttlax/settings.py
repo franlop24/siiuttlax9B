@@ -9,11 +9,14 @@ Description: Configuraciones de Proyecto SIIUTTlax
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-
-load_dotenv()
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(dotenv_path=BASE_DIR / '.env.example')
+
+
+print(f"DB_PORT: {os.getenv('DB_PORT')}") 
+
 
 
 # Quick-start development settings - unsuitable for production
