@@ -4,6 +4,9 @@ from django.shortcuts import render
 def home(request):
     return render(request,'home/home.html')
 
+def kevin(request):
+    return render(request,'home/kevin.html')
+
 def cristian(request):
     return render(request,'home/cristian.html')
 
