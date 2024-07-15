@@ -10,10 +10,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(dotenv_path=BASE_DIR / '.env.example')
 
 
 # Quick-start development settings - unsuitable for production
@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'apps.home.apps.HomeConfig',
     'apps.career.apps.CareerConfig',
-
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
