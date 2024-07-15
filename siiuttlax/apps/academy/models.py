@@ -23,7 +23,7 @@ class Professor(User):
         max_length=50,
         verbose_name='Nombre'
     )
-    category_id = models.ForeignKey(
+    category = models.ForeignKey(
         Category,
         on_delete=models.CASCADE,
         verbose_name='Categoria',
@@ -39,17 +39,6 @@ class Professor(User):
 
 
 class Student(User):
-    title = models.CharField(
-        max_length=50,
-        verbose_name='Nombre'
-    )
-    category_id = models.ForeignKey(  # Aquí corregido a ForeignKey
-        Category,
-        on_delete=models.CASCADE,
-        verbose_name='Categoria',
-        null=True,
-        blank=True
-    )
     enrollment = models.CharField(
         max_length=12,
         verbose_name='Matrícula'
