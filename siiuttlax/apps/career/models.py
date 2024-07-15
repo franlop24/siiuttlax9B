@@ -12,6 +12,7 @@ class Career(models.Model):
 
 class Subject(models.Model):
     name = models.CharField(max_length=50)
+    career = models.ForeignKey(Career, on_delete=models.CASCADE)
     semester = models.IntegerField()
     total_hours = models.IntegerField()
     hours_semesters = models.IntegerField()
