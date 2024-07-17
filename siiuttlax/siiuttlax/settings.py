@@ -1,6 +1,6 @@
 """
-Author: Francisco López Briones
-Github: @franlop24
+Author: Fatima Rojas Salamanca
+Github: 
 Project: siiuttlax
 File: settings.py
 Description: Configuraciones de Proyecto SIIUTTlax
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
