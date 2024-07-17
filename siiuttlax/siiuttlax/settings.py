@@ -1,6 +1,6 @@
 """
-Author: Fatima Rojas Salamanca
-Github: 
+Author: Francisco López Briones y Equipo 9A IDGS
+Github: @franlop24
 Project: siiuttlax
 File: settings.py
 Description: Configuraciones de Proyecto SIIUTTlax
@@ -33,7 +33,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'apps.home.apps.HomeConfig',
     'apps.period.apps.PeriodConfig',
+    'apps.career.apps.CareerConfig',
     'apps.academy.apps.AcademyConfig',
+  
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
