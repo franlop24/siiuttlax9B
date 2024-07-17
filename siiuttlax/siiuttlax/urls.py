@@ -20,6 +20,7 @@ from apps.period.views import home
 
 urlpatterns = [
     path('', include('apps.home.urls')),
+
     path('admin/', admin.site.urls),
     path('periods/', home)
 ]
