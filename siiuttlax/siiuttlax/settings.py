@@ -80,13 +80,17 @@ WSGI_APPLICATION = 'siiuttlax.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': str(os.getenv('DB_NAME')),
+    #     'USER': str(os.getenv('DB_USER')),
+    #     'PASSWORD': str(os.getenv('DB_PASSWORD')),
+    #     'HOST': str(os.getenv('DB_HOST')),
+    #     'PORT': str(os.getenv('DB_PORT')),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': str(os.getenv('DB_NAME')),
-        'USER': str(os.getenv('DB_USER')),
-        'PASSWORD': str(os.getenv('DB_PASSWORD')),
-        'HOST': str(os.getenv('DB_HOST')),
-        'PORT': str(os.getenv('DB_PORT')),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
